@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:text="Sign Up Form"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="-220dp"
+        android:layout_marginTop="75dp"
+        android:background="#dcd9d9"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+
+        android:layout_marginLeft="-288dp"
+        android:layout_marginTop="130dp"
+        android:background="#dcd9d9"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+
+        android:layout_marginLeft="-288dp"
+        android:layout_marginTop="190dp"
+        android:background="#dcd9d9"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+
+        android:layout_marginLeft="-288dp"
+        android:layout_marginTop="250dp"
+        android:background="#dcd9d9"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+
+        android:layout_marginLeft="-290dp"
+        android:layout_marginTop="310dp"
+        android:background="#dcd9d9"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-300dp"
+        android:layout_marginTop="410dp"
+        android:text="Sign Up" />
+
+</LinearLayout>

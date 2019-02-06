@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.sayed_kaif.sign_up"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+def dbflow_version = "4.0.3"
+def sqlcipher_version = "3.5.4"
+def support_library = "25.2.0"
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    // implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+
+   // annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+  //  implementation "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+  //  implementation "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+  //  implementation "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:${dbflow_version}"
+  //  implementation "net.zetetic:android-database-sqlcipher:${sqlcipher_version}@aar"
+  //  annotationProcessor 'com.google.auto.value:auto-value:1.1'
+
+  //  implementation "com.github.hotchemi:permissionsdispatcher:3.0.1"
+  //  annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
+
+
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+
+}
